@@ -9,13 +9,13 @@ public interface IProduct {
 
     String getId();
 
-    Date getDateExpiraton();
-
     String getName();
 
     String getDescription();
 
     String getBrand();
+
+    Date getDateExpiraton();
 
 
 }
