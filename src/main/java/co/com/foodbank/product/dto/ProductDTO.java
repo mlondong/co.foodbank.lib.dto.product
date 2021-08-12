@@ -5,10 +5,16 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author mauricio.londono@gmail.com co.com.foodbank.product.dto 22/06/2021
  */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ProductDTO {
 
     @NotNull(message = "Name must be declared.")
@@ -39,71 +45,6 @@ public class ProductDTO {
 
 
     private boolean requiredRefrigeration;
-
-
-
-    /**
-     * Defaut constructor.
-     */
-    public ProductDTO() {}
-
-
-    public String getExpectedStorageLife() {
-        return expectedStorageLife;
-    }
-
-    public void setExpectedStorageLife(String expectedStorageLife) {
-        this.expectedStorageLife = expectedStorageLife;
-    }
-
-    public String getStorageTemperature() {
-        return storageTemperature;
-    }
-
-    public void setStorageTemperature(String storageTemperature) {
-        this.storageTemperature = storageTemperature;
-    }
-
-    public boolean isRequiredRefrigeration() {
-        return requiredRefrigeration;
-    }
-
-    public void setRequiredRefrigeration(boolean requiredRefrigeration) {
-        this.requiredRefrigeration = requiredRefrigeration;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-
-    public Date getDateExpiraton() {
-        return dateExpiraton;
-    }
-
-    public void setDateExpiraton(Date dateExpiraton) {
-        this.dateExpiraton = dateExpiraton;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
 
 
