@@ -1,10 +1,18 @@
-package co.com.foodbank.product.dto;
+package co.com.foodbank.product.dao;
 
 import java.util.Date;
+import co.com.foodbank.product.interfaces.IProduct;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author mauricio.londono@gmail.com co.com.foodbank.product.dto 9/07/2021
  */
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ProductData implements IProduct {
 
     private String id;
@@ -16,27 +24,7 @@ public class ProductData implements IProduct {
     /**
      * Default constructor.
      */
-    public ProductData() {}
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public void setDateExpiraton(Date dateExpiraton) {
-        this.dateExpiraton = dateExpiraton;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
 
     @Override
     public String getId() {
