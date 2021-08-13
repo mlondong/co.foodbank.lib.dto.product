@@ -1,4 +1,4 @@
-package co.com.foodbank.product.interfaces;
+package co.com.foodbank.product.dto.interfaces;
 
 import java.util.Date;
 

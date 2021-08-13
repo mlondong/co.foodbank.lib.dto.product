@@ -1,7 +1,7 @@
-package co.com.foodbank.product.dao;
+package co.com.foodbank.product.dto.request;
 
 import java.util.Date;
-import co.com.foodbank.product.interfaces.IProduct;
+import co.com.foodbank.product.dto.interfaces.IProduct;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
